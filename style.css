@@ -14,8 +14,9 @@ body {
 .container {
   background-color: hsl(216, 50%, 16%);
   width: 375px;
-  padding: 30px;
+  padding: 20px;
   border-radius: 12px;
+  box-shadow: 10px 30px 30px black;
 }
 .main {
   display: flex;
@@ -24,8 +25,23 @@ body {
   flex-direction: column;
 }
 .main-img {
-  width: 300px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  display: block;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.icon{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+}
+.main:hover .icon{
+    opacity: 1;
 }
 
 .body {
@@ -62,10 +78,34 @@ body {
 }
 
 .section .iethereum {
-    color: aqua;
+  color: aqua;
 }
 
-.line{
-    border: 1px solid hsl(215, 32%, 27%);
+.line {
+  border: 1px solid hsl(215, 32%, 27%);
+}
 
+.image-avatar {
+  width: 40px;
+  margin-right: 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.footer {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: row;
+  font-size: 18px;
+}
+.footer p {
+  color: hsl(215, 51%, 70%);
+}
+
+.footer span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.footer span:hover {
+  color: hsl(178, 100%, 50%);
 }
