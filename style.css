@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background-color: hsl(216, 50%, 16%);
+  width: 375px;
+  padding: 30px;
+  border-radius: 12px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.body {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.body h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+.body h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+.body p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section img {
+  padding-right: 8px;
+}
+.section h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.section .iethereum {
+    color: aqua;
+}
+
+.line{
+    border: 1px solid hsl(215, 32%, 27%);
+
+}
